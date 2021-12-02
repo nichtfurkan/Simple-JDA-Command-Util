@@ -47,7 +47,7 @@ If there are too many or not enoug sub commands it will send a Message that you 
 * **admin** - A boolean that if true will send a Message to thoes who dont have Administration rights on the Discord Server. Check **Configuration**
 * **neededSubCommands** - A String where you give the needed sub commands. Example: "USERNAME, ID", "(USERNAME, ID)" etc. This is needed for the Message that will be send if there are not enough sub commands
 
-After you've set the Parameters you can now create he **processCommand** method
+After you've set the Parameters you can now create he **processCommand** metho
 
 ```Java
 
@@ -60,13 +60,14 @@ public class HelpCommand extends Command {
     
     @Override
     public void processCommand(String command, Member member, TextChannel channel) {
-
+        super.processCommand(command, member, channel);
     }
     
 }
 
 ```
 In this method you can write your Code but before doing that we need one more thing.</br>
+### **DONT DELETE THE SUPER METHOD IT INITS THINGS**</br>
 We need a check that the Command has been typed successfully and with right sub commands.</br>
 We need:
 
@@ -74,6 +75,7 @@ We need:
     
     @Override
     public void processCommand(String command, Member member, TextChannel channel) {
+       super.processCommand(command, member, channel);
        if(!this.checkIntegrity()) {
             return;
         }
