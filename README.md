@@ -6,7 +6,7 @@ Its good if you have already created some Bots.
 
 JDA - https://github.com/DV8FromTheWorld/JDA
 
-*Beware that my English is terrible so please dont bully me*
+*Beware that my English is terrible*
 
 # Creating a command
 To create a command you need to create a Class whick extends the Command.java class:
