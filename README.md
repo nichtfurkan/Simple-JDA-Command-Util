@@ -1,6 +1,6 @@
 # Simple-JDA-Command-Util
 
-[![CodeFactor](https://www.codefactor.io/repository/github/nichtfurkan/simple-jda-command-util/badge)](https://www.codefactor.io/repository/github/nichtfurkan/simple-jda-command-util)
+[![CodeFactor](https://www.codefactor.io/repository/github/nichtfurkan/simple-jda-command-util/badge)](https://www.codefactor.io/repository/github/nichtfurkan/simple-jda-command-util) </br>
 A simple way to create Discord Bot Commands in Java
 
 To understand the code you need to be familiar with the **JDA** Library.
